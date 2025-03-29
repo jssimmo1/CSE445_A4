@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element name is 'Hotel' instead of 'Hotels' (Error #1) -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+    <!-- Valid hotel (for comparison) -->
+    <Hotel>
+        <Name>Westin</Name>
+        <Phone>480-968-8885</Phone>
+        <Phone>800-937-8461</Phone>
+        <Address NearstAirport="Sky Harbor">
+            <Number>11</Number>
+            <Street>E.7th St</Street>
+            <City>Tempe</City>
+            <State>AZ</State>
+            <Zip>85281</Zip>
+        </Address>
+        <Rating>4.2</Rating>
+    </Hotel>
+
+    <!-- Missing required attribute NearstAirport (Error #2) -->
+    <Hotel>
+        <Name>Hotel Wailea</Name>
+        <Phone>866-970-4167</Phone>
+        <Address>
+            <Number>555</Number>
+            <Street>Kaukahi Street</Street>
+            <City>Wailea</City>
+            <State>HI</State>
+            <Zip>96753</Zip>
+        </Address>
+    </Hotel>
+
+    <!-- No <Phone> element in this hotel (Error #3) -->
+    <Hotel>
+        <Name>The Post Oak Hotel</Name>
+        <Address NearstAirport="William P. Hobby Airport">
+            <Number>1600</Number>
+            <Street>West Loop South</Street>
+            <City>Houston</City>
+            <State>TX</State>
+            <Zip>77027</Zip>
+        </Address>
+        <Rating>4.6</Rating>
+    </Hotel>
+
+    <!-- Address element not closed properly (Error #4) -->
+    <Hotel>
+        <Name>Waldorf Astoria Beverly Hills</Name>
+        <Phone>310-860-6666</Phone>
+        <Phone>310-860-6565</Phone>
+        <Address NearstAirport="Santa Monica Airport">
+        <Number>9850</Number>
+        <Street>Wilshire Boulevard</Street>
+        <City>Los Angeles</City>
+        <State>CA</State>
+        <Zip>90210</Zip>
+        <!-- Missing </Address> tag -->
+        <Rating>4.5</Rating>
+    </Hotel>
+
+    <!-- Duplicate <Name> elements (Error #5) -->
+    <Hotel>
+        <Name>Duplicate Hotel</Name>
+        <Name>Extra Name</Name>
+        <Phone>800-123-4567</Phone>
+        <Address NearstAirport="Generic Airport">
+            <Number>101</Number>
+            <Street>Main Street</Street>
+            <City>Sample City</City>
+            <State>SC</State>
+            <Zip>12345</Zip>
+        </Address>
+    </Hotel>
+
+</Hotel>
