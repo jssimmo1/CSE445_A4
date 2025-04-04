@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- XML Schema for Hotel Directory as per Figure 1 -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://venus.sod.asu.edu/WSRepository/xml"
+  targetNamespace="http://venus.sod.asu.edu/WSRepository/xml"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+  <xsd:annotation>
+    <xsd:documentation xml:lang="en">
+      XML Schema for Hotel Directory - CSE445 Assignment 4 Jaylen Simmons
+    </xsd:documentation>
+  </xsd:annotation>
 
     <!-- Root element: Hotels -->
-    <xs:element name="Hotels">
-        <xs:complexType>
-            <xs:sequence>
-                <!-- Hotels can contain one or more Hotel elements -->
-                <xs:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <!-- Hotel name -->
-                            <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+     <xsd:element name="Hotels" type="HotelsType"/>
+         <!-- Complex type for Hotels -->
+  <xsd:complexType name="HotelsType">
+    <xsd:sequence>
+      <xsd:element name="Hotel" type="HotelType" minOccurs="1" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
 
-                            <!-- One or more phone numbers -->
-                            <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+  <!-- Complex type for Hotel -->
+  <xsd:complexType name="HotelType">
+    <xsd:sequence>
+      <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+      <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+    <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
+  </xsd:complexType>
 
-                            <!-- Address section -->
-                            <xs:element name="Address">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="Number" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                                        <xs:element name="Street" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                        <xs:element name="City" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                        <xs:element name="State" type="xs:string" minOccurs="1" maxOccurs="1"/>
-                                        <xs:element name="Zip" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-                                    </xs:sequence>
-                                      <!-- Required attribute: NearstAirport -->
-                                      <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
-                                </xs:complexType>
-                            </xs:element>
-                            <!-- Optional Rating attribute -->
-                            <xs:attribute name="Rating" type="xs:string" use="optional"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+  <!-- Complex type for Address -->
+  <xsd:complexType name="AddressType">
+    <xsd:sequence>
+      <xsd:element name="Number" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="Zip" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+    <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
+  </xsd:complexType>
 
-</xs:schema>
+</xsd:schema>
