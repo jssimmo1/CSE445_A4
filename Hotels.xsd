@@ -33,7 +33,7 @@
                             </xs:element>
 
                             <!-- Optional Rating attribute -->
-                            <xs:element name="Rating" type="xs:string" minOccurs="0"/>
+                            <xs:attribute name="Rating" type="xs:string" use="optional"/>
 
                         </xs:sequence>
                     </xs:complexType>
