@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
-    <Hotel>
+    <Hotel Rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
         <Phone>800-937-8461</Phone>
@@ -12,7 +12,6 @@
             <State>AZ</State>
             <Zip>85281</Zip>
         </Address>
-        <Rating>4.2</Rating>
     </Hotel>
 
     <!-- Add 10 real hotels -->
@@ -29,7 +28,7 @@
         </Address>
     </Hotel>
 
-    <Hotel>
+    <Hotel Rating="4.6">
         <Name>The Post Oak Hotel</Name>
         <Phone>346-227-5000</Phone>
         <Address NearstAirport= "William P. Hobby Airport">
@@ -39,7 +38,6 @@
             <State>TX</State>
             <Zip>77027</Zip>
         </Address>
-        <Rating>4.6</Rating>
     </Hotel>
 
     <Hotel>
@@ -54,7 +52,7 @@
         </Address>
     </Hotel>
 
-    <Hotel>
+    <Hotel Rating="4.7">
         <Name>The Ritz-Carlton Naples</Name>
         <Phone>239-598-3300</Phone>
         <Address NearstAirport= "Naples Municipal Airport">
@@ -64,7 +62,6 @@
             <State>FL</State>
             <Zip>34108</Zip>
         </Address>
-        <Rating>4.7</Rating>
     </Hotel>
 
     <Hotel>
@@ -80,7 +77,7 @@
         </Address>
     </Hotel>
 
-    <Hotel>
+    <Hotel Rating="4.7">
         <Name>Blackberry Farm</Name>
         <Phone>800-557-8864</Phone>
         <Phone>865-984-8166</Phone>
@@ -91,7 +88,6 @@
             <State>TN</State>
             <Zip>37886</Zip>
         </Address>
-        <Rating>4.7</Rating>
     </Hotel>
 
     <Hotel>
@@ -118,7 +114,7 @@
         </Address>
     </Hotel>
 
-    <Hotel>
+    <Hotel Rating="4.7">
         <Name>The Cloister</Name>
         <Phone>866-966-5983</Phone>
         <Address NearstAirport= "McKinnon St. Simons Island Airport">
@@ -128,7 +124,6 @@
             <State>GA</State>
             <Zip>31561</Zip>
         </Address>
-        <Rating>4.7</Rating>
     </Hotel>
 
     <Hotel>
