@@ -27,9 +27,11 @@
   <xsd:complexType name="HotelType">
     <xsd:sequence>
       <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <!-- One or more phone numbers allowed -->
       <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
       <xsd:element name="Address" type="AddressType" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
+    <!-- The required optional attribute for Rating -->
     <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
   </xsd:complexType>
 
@@ -42,6 +44,7 @@
       <xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
       <xsd:element name="Zip" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
     </xsd:sequence>
+    <!-- The required attribute for NearstAirport -->
     <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
   </xsd:complexType>
 
