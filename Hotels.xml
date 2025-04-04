@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="Hotels.xsd">
-    <Hotel Rating="4.2" NearstAirport="Sky Harbor">
+    <Hotel Rating="4.2">
         <Name>Westin</Name>
         <Phone>480-968-8885</Phone>
         <Phone>800-937-8461</Phone>
-        <Address>
+        <Address NearstAirport="Sky Harbor">
             <Number>11</Number>
             <Street>E. 7th St</Street>
             <City>Tempe</City>
@@ -15,11 +15,11 @@
     </Hotel>
 
     <!-- Add 10 real hotels -->
-    <Hotel NearstAirport="Kissimmee Gateway Airport">
+    <Hotel>
         <Name>Best Western Plus Orlando Lake Buena Vista South Inn and Suites</Name>
         <Phone>800-780-7234</Phone>
         <Phone>602-555-4321</Phone>
-        <Address>
+        <Address NearstAirport="Kissimmee Gateway Airport">
             <Number>3484</Number>
             <Street>Polynesian Isle Boulevard</Street>
             <City>Kissimmee</City>
@@ -28,10 +28,10 @@
         </Address>
     </Hotel>
 
-    <Hotel Rating="4.6" NearstAirport= "William P. Hobby Airport">
+    <Hotel Rating="4.6">
         <Name>The Post Oak Hotel</Name>
         <Phone>346-227-5000</Phone>
-        <Address>
+        <Address NearstAirport= "William P. Hobby Airport">
             <Number>1600</Number>
             <Street>West Loop South</Street>
             <City>Houston</City>
@@ -40,10 +40,10 @@
         </Address>
     </Hotel>
 
-    <Hotel NearstAirport= "Kahului Airport">
+    <Hotel>
         <Name>Hotel Wailea</Name>
         <Phone>866-970-4167</Phone>
-        <Address>
+        <Address NearstAirport= "Kahului Airport">
             <Number>555</Number>
             <Street>Kaukahi Street</Street>
             <City>Wailea</City>
@@ -52,10 +52,10 @@
         </Address>
     </Hotel>
 
-    <Hotel Rating="4.7" NearstAirport= "Naples Municipal Airport">
+    <Hotel Rating="4.7">
         <Name>The Ritz-Carlton Naples</Name>
         <Phone>239-598-3300</Phone>
-        <Address>
+        <Address NearstAirport= "Naples Municipal Airport">
             <Number>280</Number>
             <Street>Vanderbilt Beach Road, Pelican Bay</Street>
             <City>Naples</City>
@@ -64,11 +64,11 @@
         </Address>
     </Hotel>
 
-    <Hotel NearstAirport= "Santa Monica Airport">
+    <Hotel>
         <Name>Waldorf Astoria Beverly Hills</Name>
         <Phone>310-860-6666</Phone>
         <Phone>310-860-6565</Phone>
-        <Address>
+        <Address NearstAirport= "Santa Monica Airport">
             <Number>9850</Number>
             <Street>Wilshire Boulevard, Beverly Hills</Street>
             <City>Los Angeles</City>
@@ -77,11 +77,11 @@
         </Address>
     </Hotel>
 
-    <Hotel Rating="4.7" NearstAirport= "Knoxville McGhee Tyson Airport">
+    <Hotel Rating="4.7">
         <Name>Blackberry Farm</Name>
         <Phone>800-557-8864</Phone>
         <Phone>865-984-8166</Phone>
-        <Address>
+        <Address NearstAirport= "Knoxville McGhee Tyson Airport">
             <Number>1471</Number>
             <Street>West Millers Cove Road</Street>
             <City>Walland</City>
@@ -90,10 +90,10 @@
         </Address>
     </Hotel>
 
-    <Hotel NearstAirport= "General Mitchell International Airport">
+    <Hotel>
         <Name>The American Club</Name>
         <Phone>844-247-9140</Phone>
-        <Address>
+        <Address NearstAirport= "General Mitchell International Airport">
             <Number>419</Number>
             <Street>Highland Drive</Street>
             <City>Kohler</City>
@@ -102,10 +102,10 @@
         </Address>
     </Hotel>
 
-    <Hotel NearstAirport= "Boston Harbor Seaplane Base">
+    <Hotel>
         <Name>Boston Harbor Hotel</Name>
         <Phone>617-439-7000</Phone>
-        <Address>
+        <Address NearstAirport= "Boston Harbor Seaplane Base">
             <Number>70</Number>
             <Street>Rowes Wharf</Street>
             <City>Boston</City>
@@ -114,10 +114,10 @@
         </Address>
     </Hotel>
 
-    <Hotel Rating="4.7" NearstAirport= "McKinnon St. Simons Island Airport">
+    <Hotel Rating="4.7">
         <Name>The Cloister</Name>
         <Phone>866-966-5983</Phone>
-        <Address>
+        <Address NearstAirport= "McKinnon St. Simons Island Airport">
             <Number>100</Number>
             <Street>Cloister Dr</Street>
             <City>Sea Island</City>
@@ -126,10 +126,10 @@
         </Address>
     </Hotel>
 
-    <Hotel NearstAirport= "Aspen-Pitkin County Airport">
+    <Hotel>
         <Name>The Little Nell</Name>
         <Phone>855-920-4600</Phone>
-        <Address>
+        <Address NearstAirport= "Aspen-Pitkin County Airport">
             <Number>675</Number>
             <Street>East Durant Avenue</Street>
             <City>Aspen</City>
