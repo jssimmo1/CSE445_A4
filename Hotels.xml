@@ -29,7 +29,8 @@
             <Zip>34746</Zip>
         </Address>
     </Hotel>
-
+  
+  <!-- Hotel #2 -->
     <Hotel Rating="4.6">
         <Name>The Post Oak Hotel</Name>
         <Phone>346-227-5000</Phone>
@@ -42,6 +43,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #3 -->
     <Hotel>
         <Name>Hotel Wailea</Name>
         <Phone>866-970-4167</Phone>
@@ -54,6 +56,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #4 -->
     <Hotel Rating="4.7">
         <Name>The Ritz-Carlton Naples</Name>
         <Phone>239-598-3300</Phone>
@@ -66,6 +69,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #5 -->
     <Hotel>
         <Name>Waldorf Astoria Beverly Hills</Name>
         <Phone>310-860-6666</Phone>
@@ -79,6 +83,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #6 -->
     <Hotel Rating="4.7">
         <Name>Blackberry Farm</Name>
         <Phone>800-557-8864</Phone>
@@ -92,6 +97,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #7 -->
     <Hotel>
         <Name>The American Club</Name>
         <Phone>844-247-9140</Phone>
@@ -104,6 +110,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #8 -->
     <Hotel>
         <Name>Boston Harbor Hotel</Name>
         <Phone>617-439-7000</Phone>
@@ -116,6 +123,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #9 -->
     <Hotel Rating="4.7">
         <Name>The Cloister</Name>
         <Phone>866-966-5983</Phone>
@@ -128,6 +136,7 @@
         </Address>
     </Hotel>
 
+  <!-- Hotel #10 -->
     <Hotel>
         <Name>The Little Nell</Name>
         <Phone>855-920-4600</Phone>
